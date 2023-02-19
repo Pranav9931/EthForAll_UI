@@ -1,0 +1,113 @@
+.employee-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.employee-card{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.employee-card:nth-last-of-type(odd){
+    background: #fafafa;
+}
+.employee-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.detail-box{
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    margin-top: 5px;
+}
+
+.employee-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.employee-details-rev{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    align-self:flex-end;
+    gap: 15px;
+}
+  
+.btn-abs {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.pay-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.card-bottom-wrapper{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.success{
+    background: #28a74510;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.warning {
+    background: #dc354510;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+    color: #dc3545;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.payroll-container {
+    padding: 10px;
+    
+}
+
+.payroll-main-frame{
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payroll-title {
+    font-weight: 700;
+    font-size: 2em;
+}

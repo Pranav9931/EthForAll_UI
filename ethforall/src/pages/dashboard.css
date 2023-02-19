@@ -1,0 +1,149 @@
+.dashboard-container{
+    padding: 0px 0 0 20px;
+    gap: 20px;
+}
+
+.main-dashboard-items{
+    flex: .7;
+    margin-top: 20px;
+}
+
+.department-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.department-content{
+    margin: 10px 0;
+    padding: 20px;
+    background-color: red;
+    border-radius: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-img{
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 37.5px;
+    text-align: center;
+}
+
+.content-img img{
+    width: 20px;
+}
+
+.amount-balance{
+    margin-top: 20px;
+    font-size: 2.3em;
+}
+
+.content-title{
+    font-weight: 500;
+}
+
+.account-details{
+    background: rgba(0,0,0,1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.wallet-icon{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+
+}
+
+.wallet-icon img{
+    width: 50px;
+}
+
+.transactions-details{
+    min-height: 300px;
+    /* background: #fafafa; */
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+    margin: 20px 0;
+}
+
+.arrow-icon{
+    height: 20px;
+}
+
+.dashboard-sidebar{
+    border-left: 1px solid #e2e2e2;
+    flex: .3;
+}
+
+.load-more-btn{
+    border: 1px solid #e2e2e2;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    top: -30px;
+    background:rgba(255, 255, 255, 1)
+}
+
+.transactions-details + .load-more-btn{
+    display: none;
+}
+
+.transactions-details:hover + .load-more-btn{
+    display: block;
+}
+
+.loader-container{
+    transform: translate(50%, 50%);
+    margin: 110px auto 0 -40px;
+}
+
+.loader-container img{
+    width: 40px;
+    height: 40px;
+    animation: animate .5s infinite;
+}
+
+.transactions-graph-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar-span{
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: 600;
+}
+
+.transactions-employee-container{
+    margin: 20px 0;
+    border-top: 1px sold #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(350deg);
+    }
+}

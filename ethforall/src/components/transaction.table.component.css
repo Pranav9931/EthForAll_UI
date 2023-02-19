@@ -1,0 +1,65 @@
+table{
+    /* font-size: .9em; */
+    min-width: 100%;
+    border-collapse: collapse;
+    font-weight: 400;
+    /* overflow: auto; */
+
+}
+
+.tHead{
+    position: sticky;
+    top: 0;
+}
+
+thead tr th{
+    font-weight: 600;
+    color: #fff;
+    padding: 1em 10px;
+    cursor: pointer;
+    text-align: left;
+    background: #111;
+}
+
+
+thead tr th:hover{
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+td{
+    padding: 10px 10px;
+    min-width: 1em;
+    overflow: auto;
+    color: #000000;
+}
+tbody tr:nth-of-type(even){
+    background: #f2f2f2;
+}
+tbody tr{
+    border-bottom: .05em dashed rgba(0, 0, 0, 0.1);
+}
+
+tbody tr:hover{
+    background: #d1d1d1;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.transaction-success-msg-container{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    align-items: center;
+}
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    gap: 20px;
+}
+.transaction-success-msg-container img{
+    width: 70px;
+}

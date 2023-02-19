@@ -1,0 +1,58 @@
+.App{
+  display: flex;
+}
+
+.nav-title{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.page-title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.page-title-sec{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.flex{
+  display: flex;
+}
+.gap-10{
+  gap: 10px;
+}
+.gap-30{
+  gap: 30px;
+}
+.al-cnt{
+  align-items: center;
+}
+.jst-spc-ard{
+  justify-content: space-around;
+}
+
+.jst-spc-btw{
+  justify-content: space-between;
+}
+
+.op-5{
+  opacity: 0.5;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mr-tp-10{
+  margin-top: 10px;
+}
+
+.mr-tp-20{
+  margin-top: 20px;
+}
+
+.p-10 {
+  padding: 10px;
+}
