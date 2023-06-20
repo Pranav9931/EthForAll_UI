@@ -1,5 +1,6 @@
 import { utils, ethers } from 'ethers';
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Loader } from '../assets';
 
 import { useStateContext } from '../context'
@@ -11,6 +12,8 @@ const Payroll = () => {
     const [employee, setEmployee] = React.useState([] as any);
     const [isLoading, setIsLoading] = React.useState(false);
     const [totalOutstandingAmount, setTotalOutstandingAmount] = React.useState(0);
+
+    const navigate = useNavigate();
 
     const fetchEmployee = async () => {
         setIsLoading(true);
@@ -44,10 +47,11 @@ const Payroll = () => {
     const handleClick = async (amount: string) => {
         if (address) {
             const data = await payrollEmployee(amount);
-            if (data) window.location.href = "https://google.com";
+            navigate("../transactions/success");
         }
         else {
             alert("Connect to wallet first.")
+            navigate("../transactions/failed");
         }
     }
 
